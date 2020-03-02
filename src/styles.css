@@ -1,3 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(https://bootswatch.com/4/flatly/bootstrap.min.css);
 
+form.signup {
+  width: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  form.signup {
+    width: 100%;
+  }
+}
