@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireModule } from '@angular/fire';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,18 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    AngularFireModule.initializeApp(
+      {
+        apiKey: "AIzaSyCNMfN8eFUrxcu7-QzRwuhugMKvE9Elm4w",
+        authDomain: "markzsandbox.firebaseapp.com",
+        databaseURL: "https://markzsandbox.firebaseio.com",
+        projectId: "markzsandbox",
+        storageBucket: "markzsandbox.appspot.com",
+        messagingSenderId: "1033672159556",
+        appId: "1:1033672159556:web:79083d5aaf2a847455a711",
+        measurementId: "G-W40SXX700K"
+      }
+    ),
     NgbModule
   ],
   providers: [],
